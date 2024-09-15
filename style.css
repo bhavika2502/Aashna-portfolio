@@ -1,0 +1,96 @@
+/* Apply background color and text color throughout */
+body {
+    background-color: #002B15; /* Dark green background */
+    color: #FF8370; /* Soft coral text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Fixed Header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #002B15; /* Same as background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Header container to position logo and nav */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto;
+}
+
+/* Logo styling for AASHNA OBEROI */
+.logo h1 {
+    font-family: 'Mandali', sans-serif; /* Mandali font */
+    color: #FF8370; /* Text color */
+    font-size: 18px; /* Smaller size */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Navigation links styling */
+nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    font-family: 'Mandali', sans-serif; /* Mandali font */
+    color: #FF8370; /* Text color */
+    font-size: 18px; /* Same font size as logo */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Center the title in the middle of the page */
+main {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: calc(100vh - 60px); /* Full viewport height minus header height */
+    padding-top: 60px; /* Adjust padding to avoid overlap with header */
+}
+
+.centered-title {
+    text-align: center;
+    font-family: 'LTC Badoni', serif; /* LTC Badoni font */
+    color: #FF8370; /* Text color */
+    font-weight: normal; /* Italics are controlled by font */
+    font-style: italic; /* Italics text */
+    font-size: 105px; /* Larger font size */
+    line-height: 1; /* Minimum line spacing */
+    margin: 0;
+}
+
+/* Ensure h2 elements cover the whole page */
+.centered-title h2 {
+    margin: 0;
+    padding: 0;
+}
